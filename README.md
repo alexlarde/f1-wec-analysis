@@ -41,6 +41,24 @@ Isolates the pure cost of stopping, independent of tyre performance gain.
 - Tyre degradation was negative for all drivers — Suzuka's track rubber-in effect dominates over rubber wear
 - **Sainz** lost the least time at his pit stop (+18.97s), **Gasly** the most (+26.94s)
 
+### Delta Time Analysis
+Cumulative time gap between each driver and Verstappen (reference), lap by lap.
+- A rising curve = losing time relative to Verstappen
+- A flat curve = same pace as Verstappen
+- The pit stop at lap 22 creates a spike then recovery
+
+**Top 6 findings:**
+- Norris and Piastri stayed within 2s of Verstappen all race — McLaren had identical pace
+- Leclerc and Hamilton stable at +5-10s — Ferrari competitive but not at the front
+- Sainz at +75s — incident or mechanical issue during the race
+
+**Midfield findings:**
+- Antonelli (Mercedes) only +20s behind Verstappen — exceptional rookie performance, faster than Russell
+- Stroll at +100s — clear incident in race
+- Rest of midfield tightly grouped between +40s and +80s
+
+![Delta Time](japan_gp_delta.png)
+
 ## Tools & Libraries
 - Python, Jupyter Notebook
 - FastF1 (official F1 timing data)
@@ -51,7 +69,7 @@ Isolates the pure cost of stopping, independent of tyre performance gain.
 - [x] Theoretical race pace comparison (all 20 drivers)
 - [x] Tyre degradation analysis per stint
 - [x] Pit stop time loss quantification
-- [ ] Delta time analysis between drivers
+- [x] Delta time analysis between drivers
 - [ ] WEC 6h Imola 2026 live analysis
 - [ ] LMH tyre strategy comparison
 - [ ] Pit stop window optimisation model
